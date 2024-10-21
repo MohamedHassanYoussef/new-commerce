@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.view.HomeFragment">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/hello"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/start_manage_your_bussiness"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    <ImageView
+        android:id="@+id/imageView_profile"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circular_background"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/products"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView_product"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_product"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/one"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_manage_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/manage_your_product"
+                app:layout_constraintStart_toStartOf="@+id/tv_product"
+                app:layout_constraintTop_toBottomOf="@+id/tv_product" />
+
+            <TextView
+                android:id="@+id/tv_count_product"
+                android:layout_width="44dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/count"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_count_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/number"
+                app:layout_constraintEnd_toEndOf="@+id/tv_count_product"
+                app:layout_constraintStart_toStartOf="@+id/tv_count_product"
+                app:layout_constraintTop_toBottomOf="@+id/tv_count_product" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_profile" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_coupouns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_product"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_coupouns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/coupouns"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView_coupouns"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_coupouns"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/two"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_manage_coupouns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/manage_your_coupons"
+                app:layout_constraintStart_toStartOf="@+id/tv_coupouns"
+                app:layout_constraintTop_toBottomOf="@+id/tv_coupouns" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="44dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/count"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_count_coupons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/number"
+                app:layout_constraintEnd_toEndOf="@+id/tv_count"
+                app:layout_constraintStart_toStartOf="@+id/tv_count"
+                app:layout_constraintTop_toBottomOf="@+id/tv_count" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_coupouns"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_inventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/inventory"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView_inventory"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_inventory"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/three"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_manage_inventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/manage_your_inventory"
+                app:layout_constraintStart_toStartOf="@+id/tv_inventory"
+                app:layout_constraintTop_toBottomOf="@+id/tv_inventory" />
+
+            <TextView
+                android:id="@+id/tv_count_inventory"
+                android:layout_width="44dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/count"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_count_inventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/number1"
+                app:layout_constraintEnd_toEndOf="@+id/tv_count_inventory"
+                app:layout_constraintStart_toStartOf="@+id/tv_count_inventory"
+                app:layout_constraintTop_toBottomOf="@+id/tv_count_inventory" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
