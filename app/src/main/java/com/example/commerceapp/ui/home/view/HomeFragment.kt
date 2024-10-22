@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
             homeViewModel.productCount.collect { state ->
                 when (state) {
                     is State.Loading -> {  }
-                    is State.Success -> binding.textViewCountProduct.text = state.data.body()?.count.toString()
+                    is State.Success -> {}//binding.textViewCountProduct.text = state.data.body()?.count.toString()
                     is State.Error -> Log.e("HomeFragment", "Error fetching product count: ${state.message}")
                 }
             }
