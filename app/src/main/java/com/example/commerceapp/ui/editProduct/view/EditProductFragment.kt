@@ -90,6 +90,8 @@ class EditProductFragment : Fragment() {
                             .newEditable(product.title ?: "Title not available")
                         binding.etDescriptionProduct.text = Editable.Factory.getInstance()
                             .newEditable(product.bodyHtml ?: "Description not available")
+                        binding.etImageUrl.text=Editable.Factory.getInstance()
+                            .newEditable((product.image ?: "Enter the image link").toString())
 
                         binding.etProductTypeProduct.text = Editable.Factory.getInstance()
                             .newEditable(product.productType ?: "Product type not available")
