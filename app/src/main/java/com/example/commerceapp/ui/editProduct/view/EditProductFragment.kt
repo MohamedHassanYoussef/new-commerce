@@ -23,7 +23,6 @@ import com.example.commerceapp.model.RepositoryImplementation
 import com.example.commerceapp.network.RemoteImplementation
 import com.example.commerceapp.network.RetrofitHelper
 import com.example.commerceapp.network.State
-import com.example.commerceapp.ui.addcoupon.view.AddCouponFragmentDirections
 import com.example.commerceapp.ui.editProduct.viewmodel.EditProductFactory
 import com.example.commerceapp.ui.editProduct.viewmodel.EditProductViewmodel
 import kotlinx.coroutines.Dispatchers
@@ -149,7 +148,7 @@ class EditProductFragment : Fragment() {
                 variants = listOf(
                     Variant22(
                         price = binding.etPriceProduct.text.toString()
-                      //  option2 = binding.etColorProduct.text.toString()
+                        //  option2 = binding.etColorProduct.text.toString()
                     )
                 )
             )
