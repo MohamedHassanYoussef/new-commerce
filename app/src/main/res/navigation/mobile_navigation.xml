@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.commerceapp.ui.home.view.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="                          Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_navigation_home_to_products"
             app:destination="@id/products" />
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/products"
         android:name="com.example.commerceapp.ui.products.view.ProductFragment"
-        android:label="All Produts"
+        android:label="                       All Produts"
         tools:layout="@layout/fragment_products">
         <action
             android:id="@+id/action_products_to_productDetailsFragment"
@@ -31,35 +31,35 @@
             app:destination="@id/productEdit" />
         <argument
             android:name="reLoadProduct"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
     </fragment>
 
     <fragment
         android:id="@+id/coupouns"
         android:name="com.example.commerceapp.ui.coupouns.view.CoupounsFragment"
-        android:label="@string/coupouns"
-        tools:layout="@layout/fragment_coupouns" >
+        android:label="                        Coupons"
+        tools:layout="@layout/fragment_coupouns">
         <action
             android:id="@+id/action_coupouns_to_addCouponFragment"
             app:destination="@id/addCouponFragment" />
         <argument
             android:name="addCoupon"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
     </fragment>
 
     <fragment
         android:id="@+id/me"
         android:name="com.example.commerceapp.ui.profile.ProfileFragment"
-        android:label="Profile"
+        android:label="                  Profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/productDetailsFragment"
         android:name="com.example.commerceapp.ui.addproduct.view.ProductDetailsFragment"
-        android:label="Product Add"
-        tools:layout="@layout/fragment_product_details" >
+        android:label="           Add  Product"
+        tools:layout="@layout/fragment_product_details">
         <action
             android:id="@+id/action_productDetailsFragment_to_products"
             app:destination="@id/products" />
@@ -69,7 +69,7 @@
     <fragment
         android:id="@+id/productEdit"
         android:name="com.example.commerceapp.ui.productedit.view.ProductDetails"
-        android:label="Product  Info"
+        android:label="            Product  Info"
         tools:layout="@layout/fragment_product_edite">
         <argument
             android:name="productId"
@@ -81,7 +81,7 @@
     <fragment
         android:id="@+id/editProductFragment"
         android:name="com.example.commerceapp.ui.editProduct.view.EditProductFragment"
-        android:label="Edit Product"
+        android:label="             Edit Product"
         tools:layout="@layout/fragment_edit_product">
         <argument
             android:name="editproduct"
@@ -93,8 +93,8 @@
     <fragment
         android:id="@+id/addCouponFragment"
         android:name="com.example.commerceapp.ui.addcoupon.view.AddCouponFragment"
-        android:label="Add Coupon"
-        tools:layout="@layout/fragment_add_coupon" >
+        android:label="              Add Coupon"
+        tools:layout="@layout/fragment_add_coupon">
         <action
             android:id="@+id/action_addCouponFragment_to_coupouns"
             app:destination="@id/coupouns" />
