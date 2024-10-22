@@ -90,8 +90,9 @@ class EditProductFragment : Fragment() {
                             .newEditable(product.title ?: "Title not available")
                         binding.etDescriptionProduct.text = Editable.Factory.getInstance()
                             .newEditable(product.bodyHtml ?: "Description not available")
-                        binding.etImageUrl.text=Editable.Factory.getInstance()
-                            .newEditable((product.image ?: "Enter the image link").toString())
+
+                        binding.etImageUrl.text = Editable.Factory.getInstance()
+                            .newEditable(product.image?.src ?: "No image URL available")
 
                         binding.etProductTypeProduct.text = Editable.Factory.getInstance()
                             .newEditable(product.productType ?: "Product type not available")
@@ -148,7 +149,7 @@ class EditProductFragment : Fragment() {
                     is State.Error -> {
                         Toast.makeText(
                             requireContext(),
-                            "Error updating product: ${state.message}",
+                            "Error updating product",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -168,6 +169,14 @@ class EditProductFragment : Fragment() {
             }
 
 
+            val imageUrl2 = binding.etImageUrl.text.toString().trim()
+            if (imageUrl2.isBlank()) {
+                Toast.makeText(requireContext(), "Please enter a valid image URL", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }else {
+                openImagePicker()
+            }
+
             val updatedProduct = Product(
                 id = product.id,
                 title = binding.etTitleProduct.text.toString(),
@@ -186,7 +195,6 @@ class EditProductFragment : Fragment() {
             val updateProduct = UpdateProduct(product = updatedProduct)
             Log.d("EditProductFragment", "Attempting to update product: $updateProduct")
 
-
             editProductViewmodel.updateProductDetails(updateProduct)
         }
     }
@@ -194,15 +202,12 @@ class EditProductFragment : Fragment() {
 
     private fun openImagePicker() {
         Log.d("openImagePicker", "openImagePicker called")
-
-
         val imageUrl = binding.etImageUrl.text.toString().trim()
         image = ImageEdit(imageUrl, imageUrl)
         if (imageUrl.isNotEmpty()) {
             Glide.with(binding.ivInsert.context)
                 .load(imageUrl)
                 .into(binding.ivInsert)
-
             Log.d("openImagePicker", "Loading image from: $imageUrl")
         } else {
 
