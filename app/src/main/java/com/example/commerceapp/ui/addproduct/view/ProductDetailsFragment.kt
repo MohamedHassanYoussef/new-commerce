@@ -98,10 +98,17 @@ class ProductDetailsFragment : Fragment() {
 
         val title = binding.etTitle.text.toString().trim()
         val brand = binding.etBrand.text.toString().trim()
-        val price = binding.etPrice.text.toString().toDoubleOrNull()
+        val priceInput = binding.etPrice.text.toString().trim()
+        val price = priceInput.toDoubleOrNull()
         val imageUrl = binding.etImageUrl.toString().trim()
         val productType = binding.etProductType.text.toString().trim()
         val description = binding.etDescription.text.toString().trim()
+
+
+        if (priceInput.isEmpty() || price == null || price <= 0) {
+            showToast("A valid price greater than zero is required")
+            return
+        }
 
 
         if (imageUrl.isEmpty()) {
@@ -130,6 +137,8 @@ class ProductDetailsFragment : Fragment() {
             showToast("Description is required")
             return
         }
+
+
 
         val newProduct = AddProduct(
             product = Product(
