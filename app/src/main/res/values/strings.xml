@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CommerceApp</string>
+    <string name="app_name">Bazaar</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -22,7 +22,7 @@
     <string name="description">Description</string>
     <string name="add_picture_to_product">Add picture to Product</string>
     <string name="add_product">Add Product</string>
-    <string name="product_details">Product Details</string>
+    <string name="product_details">Product Details:</string>
     <string name="edit_product">Edit Product</string>
     <string name="vender">Vender</string>
     <string name="number1">1</string>
@@ -37,7 +37,7 @@
     <string name="start_date">From</string>
     <string name="add_coupon">Add Coupon</string>
     <string name="color">Color</string>
-    <string name="product_type1">Product Type</string>
+    <string name="product_type1">Product Type:</string>
     <string name="mohamed">Mohamed</string>
     <string name="email">Email: Mohamedhassan199489@gmail.com</string>
     <string name="phone">Phone: 01202010</string>
