@@ -11,14 +11,15 @@
         android:id="@+id/textView_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="32dp"
         android:text="@string/login"
+        android:textColor="#B8001F"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <TextView
         android:id="@+id/textView_user_name"
@@ -29,7 +30,7 @@
         android:text="@string/user_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_login"
-        android:textSize="18sp"
+        android:textSize="15sp"
         android:textStyle="bold"/>
 
     <EditText
@@ -53,7 +54,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:text="@string/password"
-        android:textSize="18sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_user_name" />
@@ -76,9 +77,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="@string/login"
+        android:textColor="#B8001F"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="247dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login"
+        tools:srcCompat="@drawable/login" />
 </androidx.constraintlayout.widget.ConstraintLayout>
