@@ -77,6 +77,9 @@ class AddCouponFragment : Fragment() {
                     couponValue = (-couponValueAsNumber).toString()
                 }
 
+
+
+
                 val newCoupon = AddCoupon(
                     priceRule = PriceRule1(
                         title = couponCode,
@@ -88,7 +91,7 @@ class AddCouponFragment : Fragment() {
                         allocationMethod = "each",
                         startsAt = couponStart,
                         prerequisiteCollectionIDS = listOf(480515064112),
-                        entitledProductIDS = listOf(9623292477744, 9623291625776),
+                        entitledProductIDS = listOf(9623292215600),
                         prerequisiteToEntitlementQuantityRatio = PrerequisiteToEntitlementQuantityRatio1(
                             prerequisiteQuantity = 1,
                             entitledQuantity = 1
