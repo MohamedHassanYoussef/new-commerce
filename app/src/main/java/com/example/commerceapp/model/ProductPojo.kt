@@ -1,5 +1,8 @@
 package com.example.commerceapp.model
 
+
+import com.example.commerceapp.update.Option
+import com.example.commerceapp.update.Variant
 import com.google.gson.annotations.SerializedName
 
 data class ProductList (
