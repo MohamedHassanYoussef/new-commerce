@@ -93,24 +93,6 @@
                 app:layout_constraintStart_toStartOf="@+id/tv_product"
                 app:layout_constraintTop_toBottomOf="@+id/tv_product" />
 
-            <TextView
-                android:id="@+id/tv_count_product"
-                android:layout_width="44dp"
-                android:layout_height="18dp"
-                android:layout_marginTop="8dp"
-                android:text="@string/count"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView_count_product"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/number"
-                app:layout_constraintEnd_toEndOf="@+id/tv_count_product"
-                app:layout_constraintStart_toStartOf="@+id/tv_count_product"
-                app:layout_constraintTop_toBottomOf="@+id/tv_count_product" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -175,24 +157,6 @@
                 app:layout_constraintStart_toStartOf="@+id/tv_coupouns"
                 app:layout_constraintTop_toBottomOf="@+id/tv_coupouns" />
 
-            <TextView
-                android:id="@+id/tv_count"
-                android:layout_width="44dp"
-                android:layout_height="18dp"
-                android:layout_marginTop="8dp"
-                android:text="@string/count"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView_count_coupons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/number"
-                app:layout_constraintEnd_toEndOf="@+id/tv_count"
-                app:layout_constraintStart_toStartOf="@+id/tv_count"
-                app:layout_constraintTop_toBottomOf="@+id/tv_count" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -247,24 +211,6 @@
                 app:layout_constraintStart_toStartOf="@+id/tv_inventory"
                 app:layout_constraintTop_toBottomOf="@+id/tv_inventory" />
 
-            <TextView
-                android:id="@+id/tv_count_inventory"
-                android:layout_width="44dp"
-                android:layout_height="18dp"
-                android:layout_marginTop="8dp"
-                android:text="@string/count"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView_count_inventory"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/number1"
-                app:layout_constraintEnd_toEndOf="@+id/tv_count_inventory"
-                app:layout_constraintStart_toStartOf="@+id/tv_count_inventory"
-                app:layout_constraintTop_toBottomOf="@+id/tv_count_inventory" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
