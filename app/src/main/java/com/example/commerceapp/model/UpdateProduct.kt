@@ -1,3 +1,4 @@
+import com.example.commerceapp.model.ImageAdd
 import com.google.gson.annotations.SerializedName
 
 data class UpdateProduct(
@@ -10,10 +11,12 @@ data class Product(
     @SerializedName("body_html") val bodyHTML: String,
     val vendor: String,
     @SerializedName("product_type") val productType: String,
-    val variants: List<Variant22>
+    val variants: List<Variant22>,
+
 )
 
 data class Variant22(
     val price: String,
     @SerializedName("option_2") val option2: String? = null
 )
+
