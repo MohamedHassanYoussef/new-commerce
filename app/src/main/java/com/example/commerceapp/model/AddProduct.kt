@@ -1,5 +1,6 @@
 package com.example.commerceapp.model
 
+
 import com.google.gson.annotations.SerializedName
 
 data class AddProduct(
