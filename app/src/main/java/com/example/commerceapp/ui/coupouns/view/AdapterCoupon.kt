@@ -34,7 +34,7 @@ class AdapterCoupon(
 
         val price = coupon.value
         val currency = Currency.EGP
-        holder.binding.tvCoponValue.text = "$price ${currency.symbol} "
+        holder.binding.tvCoponValue.text = price
 
 
         Log.d("eeee2222", "CouponViewModel: ${coupon.id}")
